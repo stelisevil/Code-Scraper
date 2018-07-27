@@ -1,25 +1,26 @@
-// A simple function for converting an email address into a domain name
+// A simple function for converting an commandLineEmail address into a domain name
 
-// test email
-let email = 'stelisevil@hotmail.com'
+// test commandLineEmail
+let commandLineEmail = 'stelisevil@hotmail.com'
 
-// A way of finding where the @ symbol is in the email address
+// A way of finding where the @ symbol is in the commandLineEmail address
 let atSymbol = () => {
-  for (atSymbolIndex = 0; atSymbolIndex < email.length; atSymbolIndex++) {
-    if (email[atSymbolIndex] === '@') {
+  for (atSymbolIndex = 0; atSymbolIndex < commandLineEmail.length; atSymbolIndex++) {
+    if (commandLineEmail[atSymbolIndex] === '@') {
       return atSymbolIndex;
     }
   }
 }
 
+
 console.log(atSymbol())
 
-console.log(email[atSymbolIndex])
+console.log(commandLineEmail[atSymbol()])
 
-console.log(email.substring(atSymbolIndex+1))
+console.log(commandLineEmail.substring(atSymbol+1))
 
 
 // creates the domain name as a string and saves it to the variable 'domain'
-domain = 'http://www.'.concat(email.substring(atSymbolIndex+1))
+let domain = 'http://www.'.concat(commandLineEmail.substring(atSymbolIndex+1))
 
 console.log(domain)
