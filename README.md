@@ -1,4 +1,8 @@
 # Code-Scraper
 Code Scraper test for CanDDi
 
-I first decided to utilise the knwl package to create the program to scrape from the website source code. I will then move onto importing that website code later. 
+By providing an email address, can visit the associated domain name and scrape the 
+HTML source code for any email addresses, phone numbers or addresses.
+
+To run, type "node index.js emailAddress" in the command line, 
+where emailAddress is replaced by the email you wish to provide.
